@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReproductorMP3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,106 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJt-9P-zNb">
+                                <rect key="frame" x="0.0" y="28" width="600" height="133"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="cIl-dk-cKB"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="MJF-ZR-aRN"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFL-54-Kn8">
+                                <rect key="frame" x="180" y="169" width="240" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="4a5-yN-AtX"/>
+                                    <constraint firstAttribute="height" constant="45" id="xCr-3X-aE4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C70-j9-A8d">
+                                <rect key="frame" x="180" y="222" width="240" height="180"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgT-Mw-801">
+                                <rect key="frame" x="180" y="410" width="87" height="30"/>
+                                <state key="normal" title="Tocar"/>
+                                <connections>
+                                    <action selector="Tocar" destination="BYZ-38-t0r" eventType="touchUpInside" id="fAs-BV-QnA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjH-GN-Yx2">
+                                <rect key="frame" x="333" y="410" width="87" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="zB7-UW-8uR"/>
+                                </constraints>
+                                <state key="normal" title="Pausar"/>
+                                <connections>
+                                    <action selector="Pausar" destination="BYZ-38-t0r" eventType="touchUpInside" id="90M-FN-fap"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ym7-5a-FNh">
+                                <rect key="frame" x="255" y="448" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="f3K-F5-NAX"/>
+                                </constraints>
+                                <state key="normal" title="Detener"/>
+                                <connections>
+                                    <action selector="Detener" destination="BYZ-38-t0r" eventType="touchUpInside" id="pbU-rX-PHe"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pRl-vO-YN7">
+                                <rect key="frame" x="178" y="486" width="244" height="31"/>
+                                <connections>
+                                    <action selector="volumen:" destination="BYZ-38-t0r" eventType="valueChanged" id="KjH-QF-Ajb"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9i-zq-Q5S">
+                                <rect key="frame" x="276" y="524" width="48" height="30"/>
+                                <state key="normal" title="shuffle"/>
+                                <connections>
+                                    <action selector="shuffle" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lxp-RL-hBY"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ym7-5a-FNh" firstAttribute="top" secondItem="KgT-Mw-801" secondAttribute="bottom" constant="8" symbolic="YES" id="4Cd-hy-ywb"/>
+                            <constraint firstItem="C70-j9-A8d" firstAttribute="top" secondItem="LJt-9P-zNb" secondAttribute="bottom" constant="61" id="4Ee-mh-lQU"/>
+                            <constraint firstItem="C70-j9-A8d" firstAttribute="top" secondItem="SFL-54-Kn8" secondAttribute="bottom" constant="8" symbolic="YES" id="93j-Od-z1v"/>
+                            <constraint firstItem="SFL-54-Kn8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="149" id="A54-7p-RLI"/>
+                            <constraint firstItem="KgT-Mw-801" firstAttribute="top" secondItem="C70-j9-A8d" secondAttribute="bottom" constant="8" id="Goy-wy-yIb"/>
+                            <constraint firstItem="KgT-Mw-801" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-76.5" id="I7B-Pl-Xiz"/>
+                            <constraint firstItem="pRl-vO-YN7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IpI-z3-Lzt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KgT-Mw-801" secondAttribute="bottom" constant="160" id="Iqd-B2-ZoK"/>
+                            <constraint firstItem="C70-j9-A8d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K7W-0y-P0W"/>
+                            <constraint firstItem="pRl-vO-YN7" firstAttribute="top" secondItem="Ym7-5a-FNh" secondAttribute="bottom" constant="8" id="Kc9-jP-szL"/>
+                            <constraint firstItem="jjH-GN-Yx2" firstAttribute="leading" secondItem="KgT-Mw-801" secondAttribute="leading" constant="153" id="RjR-Ik-Wqn"/>
+                            <constraint firstItem="LJt-9P-zNb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RmZ-oY-fbM"/>
+                            <constraint firstItem="Ym7-5a-FNh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TCd-H3-7kY"/>
+                            <constraint firstItem="y9i-zq-Q5S" firstAttribute="top" secondItem="pRl-vO-YN7" secondAttribute="bottom" constant="8" id="UcV-bn-RXt"/>
+                            <constraint firstItem="LJt-9P-zNb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V8H-GT-fkd"/>
+                            <constraint firstItem="SFL-54-Kn8" firstAttribute="leading" secondItem="C70-j9-A8d" secondAttribute="leading" id="VAY-N0-jEX"/>
+                            <constraint firstItem="y9i-zq-Q5S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VIz-RL-OPX"/>
+                            <constraint firstItem="jjH-GN-Yx2" firstAttribute="trailing" secondItem="KgT-Mw-801" secondAttribute="trailing" constant="153" id="Vhk-bN-ydr"/>
+                            <constraint firstItem="KgT-Mw-801" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-76.5" id="aW7-we-p9S"/>
+                            <constraint firstItem="LJt-9P-zNb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="cgd-cU-0ZF"/>
+                            <constraint firstItem="jjH-GN-Yx2" firstAttribute="top" secondItem="KgT-Mw-801" secondAttribute="top" id="dPw-bO-ek4"/>
+                            <constraint firstItem="jjH-GN-Yx2" firstAttribute="bottom" secondItem="KgT-Mw-801" secondAttribute="bottom" id="ebJ-IR-q5A"/>
+                            <constraint firstItem="SFL-54-Kn8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q5D-jH-xQi"/>
+                            <constraint firstItem="LJt-9P-zNb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vHM-Lo-Vy8"/>
+                            <constraint firstItem="LJt-9P-zNb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wEz-K7-AD8"/>
+                            <constraint firstItem="pRl-vO-YN7" firstAttribute="leading" secondItem="KgT-Mw-801" secondAttribute="leading" id="wzV-r6-iMD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="caratula" destination="C70-j9-A8d" id="JgR-CN-9aW"/>
+                        <outlet property="titulo" destination="SFL-54-Kn8" id="bKd-26-ukV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="218" y="339"/>
         </scene>
     </scenes>
 </document>

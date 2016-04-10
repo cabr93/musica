@@ -14,6 +14,13 @@
 		076C9A621CB85A5700366DDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076C9A601CB85A5700366DDA /* LaunchScreen.storyboard */; };
 		076C9A6D1CB85A5700366DDA /* ReproductorMP3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C9A6C1CB85A5700366DDA /* ReproductorMP3Tests.swift */; };
 		076C9A781CB85A5700366DDA /* ReproductorMP3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C9A771CB85A5700366DDA /* ReproductorMP3UITests.swift */; };
+		076C9A881CB85F4C00366DDA /* Desde el Día en Que Te Fuiste.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 076C9A851CB85F4C00366DDA /* Desde el Día en Que Te Fuiste.mp3 */; };
+		076C9A891CB85F4C00366DDA /* Tú Tienes Razón ft. Silvestre Dangond.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 076C9A861CB85F4C00366DDA /* Tú Tienes Razón ft. Silvestre Dangond.mp3 */; };
+		076C9A8A1CB85F4C00366DDA /* What A Wonderful World.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 076C9A871CB85F4C00366DDA /* What A Wonderful World.mp3 */; };
+		076C9A8E1CB86B6100366DDA /* Desde el Día en Que Te Fuiste.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 076C9A8B1CB86B6100366DDA /* Desde el Día en Que Te Fuiste.jpg */; };
+		076C9A8F1CB86B6100366DDA /* Tú Tienes Razón ft. Silvestre Dangond.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 076C9A8C1CB86B6100366DDA /* Tú Tienes Razón ft. Silvestre Dangond.jpg */; };
+		076C9A901CB86B6100366DDA /* What A Wonderful World.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 076C9A8D1CB86B6100366DDA /* What A Wonderful World.jpg */; };
+		076C9A921CB86BB500366DDA /* Blanco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 076C9A911CB86BB500366DDA /* Blanco.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		076C9A731CB85A5700366DDA /* ReproductorMP3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReproductorMP3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		076C9A771CB85A5700366DDA /* ReproductorMP3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReproductorMP3UITests.swift; sourceTree = "<group>"; };
 		076C9A791CB85A5700366DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		076C9A851CB85F4C00366DDA /* Desde el Día en Que Te Fuiste.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Desde el Día en Que Te Fuiste.mp3"; sourceTree = "<group>"; };
+		076C9A861CB85F4C00366DDA /* Tú Tienes Razón ft. Silvestre Dangond.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tú Tienes Razón ft. Silvestre Dangond.mp3"; sourceTree = "<group>"; };
+		076C9A871CB85F4C00366DDA /* What A Wonderful World.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "What A Wonderful World.mp3"; sourceTree = "<group>"; };
+		076C9A8B1CB86B6100366DDA /* Desde el Día en Que Te Fuiste.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Desde el Día en Que Te Fuiste.jpg"; sourceTree = "<group>"; };
+		076C9A8C1CB86B6100366DDA /* Tú Tienes Razón ft. Silvestre Dangond.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tú Tienes Razón ft. Silvestre Dangond.jpg"; sourceTree = "<group>"; };
+		076C9A8D1CB86B6100366DDA /* What A Wonderful World.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "What A Wonderful World.jpg"; sourceTree = "<group>"; };
+		076C9A911CB86BB500366DDA /* Blanco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Blanco.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +111,13 @@
 		076C9A561CB85A5700366DDA /* ReproductorMP3 */ = {
 			isa = PBXGroup;
 			children = (
+				076C9A851CB85F4C00366DDA /* Desde el Día en Que Te Fuiste.mp3 */,
+				076C9A861CB85F4C00366DDA /* Tú Tienes Razón ft. Silvestre Dangond.mp3 */,
+				076C9A871CB85F4C00366DDA /* What A Wonderful World.mp3 */,
+				076C9A911CB86BB500366DDA /* Blanco.jpg */,
+				076C9A8B1CB86B6100366DDA /* Desde el Día en Que Te Fuiste.jpg */,
+				076C9A8C1CB86B6100366DDA /* Tú Tienes Razón ft. Silvestre Dangond.jpg */,
+				076C9A8D1CB86B6100366DDA /* What A Wonderful World.jpg */,
 				076C9A571CB85A5700366DDA /* AppDelegate.swift */,
 				076C9A591CB85A5700366DDA /* ViewController.swift */,
 				076C9A5B1CB85A5700366DDA /* Main.storyboard */,
@@ -232,8 +253,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076C9A901CB86B6100366DDA /* What A Wonderful World.jpg in Resources */,
+				076C9A881CB85F4C00366DDA /* Desde el Día en Que Te Fuiste.mp3 in Resources */,
+				076C9A8F1CB86B6100366DDA /* Tú Tienes Razón ft. Silvestre Dangond.jpg in Resources */,
+				076C9A891CB85F4C00366DDA /* Tú Tienes Razón ft. Silvestre Dangond.mp3 in Resources */,
+				076C9A8A1CB85F4C00366DDA /* What A Wonderful World.mp3 in Resources */,
 				076C9A621CB85A5700366DDA /* LaunchScreen.storyboard in Resources */,
+				076C9A8E1CB86B6100366DDA /* Desde el Día en Que Te Fuiste.jpg in Resources */,
 				076C9A5F1CB85A5700366DDA /* Assets.xcassets in Resources */,
+				076C9A921CB86BB500366DDA /* Blanco.jpg in Resources */,
 				076C9A5D1CB85A5700366DDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +515,7 @@
 				076C9A7E1CB85A5700366DDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		076C9A7F1CB85A5700366DDA /* Build configuration list for PBXNativeTarget "ReproductorMP3Tests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +524,7 @@
 				076C9A811CB85A5700366DDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		076C9A821CB85A5700366DDA /* Build configuration list for PBXNativeTarget "ReproductorMP3UITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +533,7 @@
 				076C9A841CB85A5700366DDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
