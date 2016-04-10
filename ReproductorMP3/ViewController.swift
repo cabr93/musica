@@ -87,8 +87,8 @@ class ViewController: UIViewController,UIPickerViewDelegate,UITextFieldDelegate 
         if flag{
             if reproductor.playing{
                 reproductor.stop()
-                reproductor.currentTime = 0.0
             }
+            reproductor.currentTime = 0.0
         }
     }
     @IBAction func volumen(sender: UISlider) {
