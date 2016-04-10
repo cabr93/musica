@@ -97,7 +97,6 @@ class ViewController: UIViewController,UIPickerViewDelegate,UITextFieldDelegate 
     @IBAction func shuffle() {
         let randon = Int(arc4random_uniform(UInt32(numero)) + 1)
         reproducir(arr[randon])
-        titulo.text = String(randon)
         flag = true
     }
 
