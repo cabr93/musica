@@ -21,6 +21,10 @@
 		076C9A8F1CB86B6100366DDA /* Tú Tienes Razón ft. Silvestre Dangond.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 076C9A8C1CB86B6100366DDA /* Tú Tienes Razón ft. Silvestre Dangond.jpg */; };
 		076C9A901CB86B6100366DDA /* What A Wonderful World.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 076C9A8D1CB86B6100366DDA /* What A Wonderful World.jpg */; };
 		076C9A921CB86BB500366DDA /* Blanco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 076C9A911CB86BB500366DDA /* Blanco.jpg */; };
+		07D687BE1CBAEE7C00AE87F7 /* Te soñe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D687BD1CBAEE7C00AE87F7 /* Te soñe.mp3 */; };
+		07D687C01CBAEE8500AE87F7 /* Bajo el agua.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D687BF1CBAEE8500AE87F7 /* Bajo el agua.mp3 */; };
+		07D687C71CBAEF6800AE87F7 /* Te soñe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07D687C51CBAEF6800AE87F7 /* Te soñe.jpg */; };
+		07D687C81CBAEF6800AE87F7 /* Bajo el agua.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07D687C61CBAEF6800AE87F7 /* Bajo el agua.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		076C9A8C1CB86B6100366DDA /* Tú Tienes Razón ft. Silvestre Dangond.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tú Tienes Razón ft. Silvestre Dangond.jpg"; sourceTree = "<group>"; };
 		076C9A8D1CB86B6100366DDA /* What A Wonderful World.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "What A Wonderful World.jpg"; sourceTree = "<group>"; };
 		076C9A911CB86BB500366DDA /* Blanco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Blanco.jpg; sourceTree = "<group>"; };
+		07D687BD1CBAEE7C00AE87F7 /* Te soñe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Te soñe.mp3"; sourceTree = "<group>"; };
+		07D687BF1CBAEE8500AE87F7 /* Bajo el agua.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bajo el agua.mp3"; sourceTree = "<group>"; };
+		07D687C51CBAEF6800AE87F7 /* Te soñe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Te soñe.jpg"; sourceTree = "<group>"; };
+		07D687C61CBAEF6800AE87F7 /* Bajo el agua.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bajo el agua.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +121,11 @@
 			children = (
 				076C9A851CB85F4C00366DDA /* Desde el Día en Que Te Fuiste.mp3 */,
 				076C9A861CB85F4C00366DDA /* Tú Tienes Razón ft. Silvestre Dangond.mp3 */,
+				07D687BF1CBAEE8500AE87F7 /* Bajo el agua.mp3 */,
+				07D687BD1CBAEE7C00AE87F7 /* Te soñe.mp3 */,
 				076C9A871CB85F4C00366DDA /* What A Wonderful World.mp3 */,
+				07D687C51CBAEF6800AE87F7 /* Te soñe.jpg */,
+				07D687C61CBAEF6800AE87F7 /* Bajo el agua.jpg */,
 				076C9A911CB86BB500366DDA /* Blanco.jpg */,
 				076C9A8B1CB86B6100366DDA /* Desde el Día en Que Te Fuiste.jpg */,
 				076C9A8C1CB86B6100366DDA /* Tú Tienes Razón ft. Silvestre Dangond.jpg */,
@@ -258,9 +270,13 @@
 				076C9A8F1CB86B6100366DDA /* Tú Tienes Razón ft. Silvestre Dangond.jpg in Resources */,
 				076C9A891CB85F4C00366DDA /* Tú Tienes Razón ft. Silvestre Dangond.mp3 in Resources */,
 				076C9A8A1CB85F4C00366DDA /* What A Wonderful World.mp3 in Resources */,
+				07D687C01CBAEE8500AE87F7 /* Bajo el agua.mp3 in Resources */,
+				07D687C81CBAEF6800AE87F7 /* Bajo el agua.jpg in Resources */,
 				076C9A621CB85A5700366DDA /* LaunchScreen.storyboard in Resources */,
 				076C9A8E1CB86B6100366DDA /* Desde el Día en Que Te Fuiste.jpg in Resources */,
 				076C9A5F1CB85A5700366DDA /* Assets.xcassets in Resources */,
+				07D687C71CBAEF6800AE87F7 /* Te soñe.jpg in Resources */,
+				07D687BE1CBAEE7C00AE87F7 /* Te soñe.mp3 in Resources */,
 				076C9A921CB86BB500366DDA /* Blanco.jpg in Resources */,
 				076C9A5D1CB85A5700366DDA /* Main.storyboard in Resources */,
 			);

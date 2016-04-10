@@ -11,7 +11,7 @@ import AVFoundation
 
 class ViewController: UIViewController,UIPickerViewDelegate,UITextFieldDelegate {
     
-    let arr: [String] = ["- - - -","Desde el Día en Que Te Fuiste","Tú Tienes Razón ft. Silvestre Dangond","What A Wonderful World"]
+    let arr: [String] = ["- - - -","Desde el Día en Que Te Fuiste","Tú Tienes Razón ft. Silvestre Dangond","What A Wonderful World","Te soñe","Bajo el agua"]
     var flag = false
     var numero  = 0
     private var reproductor: AVAudioPlayer!
